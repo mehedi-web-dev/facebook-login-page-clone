@@ -1,0 +1,289 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-top-parent {
+  width: 100%;
+  max-width: 1800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border-bottom: 2px solid #dfe2e5;
+}
+
+.top-one {
+  flex-basis: 25%;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-two {
+  flex-basis: 30%;
+  padding: 35px;
+}
+
+.top-three {
+  flex-basis: 45%;
+  padding: 35px;
+  border-left: 2px solid #dfe2e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-one img {
+  width: 75px;
+}
+
+.top-one h4 {
+  color: black;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.top-one h4 span {
+  color: rgb(24, 119, 242);
+}
+
+.top-two img {
+  width: 700px;
+  height: auto;
+  display: block;
+}
+
+.top-three h5 {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  display: block;
+  padding: 20px 28px;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 500;
+  border: 1px solid #dfe2e5;
+  border-radius: 12px;
+}
+
+form input:hover {
+  border: 1px solid black;
+}
+
+.login-btn {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 999px;
+  background-color: #0064e0;
+}
+
+.login-btn:hover {
+  background-color: #0065e0e3;
+  cursor: pointer;
+}
+
+.forgot-btn {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 999px;
+  background-color: white;
+}
+
+.forgot-btn:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.create-new-btn {
+  width: 100%;
+  margin-top: 30px;
+  color: rgb(0, 100, 224);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 9px 29px;
+  border: 1px solid rgb(0, 100, 224);
+  border-radius: 999px;
+  background-color: white;
+}
+
+.create-new-btn:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.top-three-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-three-bottom img {
+  width: 80px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1200px) {
+  .top-one {
+    flex-basis: 25%;
+    padding: 25px;
+  }
+
+  .top-two {
+    flex-basis: 35%;
+    padding: 25px;
+  }
+
+  .top-three {
+    flex-basis: 40%;
+    padding: 25px;
+  }
+
+  .top-one h4 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+.section-bottom{
+  width: 1800px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 100px ; 
+ 
+}
+.section-bottom p{
+  color: rgb(102, 106, 114);
+  font-weight: 400;
+  font-size: 15px;
+}
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .section-top-parent {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: none;
+  }
+
+  .top-one,
+  .top-two {
+    display: none;
+  }
+
+  .top-three {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 20px;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top-three h5 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  form {
+    width: 100%;
+    gap: 10px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .forgot-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .top-three-bottom {
+    width: 100%;
+  }
+
+  .create-new-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 20px;
+  }
+
+  .top-three-bottom img {
+    width: 70px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .top-three {
+    padding: 25px 16px;
+  }
+
+  .top-three h5 {
+    font-size: 16px;
+  }
+
+  form input {
+    padding: 16px 18px;
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+  }
+
+  .forgot-btn,
+  .create-new-btn {
+    font-size: 14px;
+  }
+}
