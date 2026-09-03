@@ -14,7 +14,7 @@ The page includes a promotional section, login form, account creation button, Me
 
 ## 📸 Screenshot
 
-![Facebook Login Page Clone Screenshot](./image/facebook-clone.png)
+![Facebook Login Page Clone Screenshot](./image/facebook.png)
 
 ---
 
